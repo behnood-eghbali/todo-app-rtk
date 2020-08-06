@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
       </header>
       <AddTodo />
-      <TodoList />
+      {/* <TodoList /> */}
     </div>
   );
 }
