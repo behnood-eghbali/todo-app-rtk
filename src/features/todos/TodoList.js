@@ -1,17 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
+import Grid from '@material-ui/core/Grid'
 
 const TodoList = ({ todos, toggleTodo }) => (
-  <ul>
-    {todos.map(todo => (
-      <Todo
-        key={todo.id}
-        {...todo}
-        onClick={() => toggleTodo({ id: todo.id })}
-      />
-    ))}
-  </ul>
+  <Grid container>
+    <Grid item xs={4} />
+    <Grid item xs={4}>
+      <ul>
+        {todos.map(todo => (
+          <Todo
+            key={todo.id}
+            {...todo}
+            onClick={() => toggleTodo({ id: todo.id })}
+          />
+        ))}
+      </ul>
+    </Grid>
+    <Grid item xs={4} />
+  </Grid>
 )
 
 TodoList.propTypes = {

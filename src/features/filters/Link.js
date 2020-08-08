@@ -1,16 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Button from '@material-ui/core/Button';
 
 const Link = ({ active, children, setVisibilityFilter, filter }) => (
-  <button
+  <Button
     onClick={() => setVisibilityFilter(filter)}
     disabled={active}
     style={{
       marginLeft: '4px'
     }}
+    variant="contained"
+    color="primary"
   >
     {children}
-  </button>
+  </Button>
 )
 
 Link.propTypes = {
