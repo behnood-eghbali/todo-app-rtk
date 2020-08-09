@@ -1,4 +1,4 @@
-## React Todo App Using: Redux Toolkit + React Hooks + Material-UI
+## React Todo App: Redux Toolkit + React Hooks + Material-UI
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
